@@ -1,9 +1,7 @@
 {
   "build_update": false,
   "packages": [
-    "win",
-    "mac",
-    "linux"
+    "win"
   ],
   "add_from": true,
   "force_recompile": true,

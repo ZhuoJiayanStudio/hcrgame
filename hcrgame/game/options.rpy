@@ -21,13 +21,14 @@ define gui.show_name = True
 
 ## 游戏版本号。
 
-define config.version = "Demo"
+define config.version = "Alpha"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
 ## 行。
 
-define gui.about = _p("""版权所有©2025卓嘉彦 张溯芃
+define gui.about = _p("""
+版权所有©2025卓嘉彦 张溯芃
 """)
 
 
@@ -139,7 +140,7 @@ define config.save_directory = "hcrgame-1758800332"
 ##
 ## 在任务栏或 Dock 上显示的图标。
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "images/stick figure.png"
 
 
 ## 构建配置 ########################################################################

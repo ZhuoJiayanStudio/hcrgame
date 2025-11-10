@@ -1,7 +1,9 @@
 ﻿label start:
     show 8
-    "著作权由卓嘉彦（80%%）和张溯芃（20%%）共同拥有。"
-    "官方网站https://hcr2025.wordpress.com/"
+    """
+    著作权由卓嘉彦（80%%）和张溯芃（20%%）共同拥有。\n
+    官方网站https://hcr2025.wordpress.com/
+    """
     hide 8
     menu:
         "火柴人游戏"

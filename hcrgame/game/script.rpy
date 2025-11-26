@@ -1,8 +1,10 @@
-﻿label start:
+﻿define hcr = Character("火柴人")
+
+label start:
     show 8
     """
-    著作权由卓嘉彦（80%%）和张溯芃（20%%）共同拥有。\n
-    官方网站https://hcr2025.wordpress.com/
+    著作权由卓嘉彦（80\%）和张溯芃（20\%）共同拥有。\n
+    官方网站https://hcrgame.wordpress.com/
     """
     hide 8
     menu:
@@ -138,3 +140,47 @@
                     "游戏结束"
                     return
             hide background 7
+
+            show background 8
+            "火柴人游戏 第8关"
+            hcr "好想去泉州玩"
+            hcr "买张票吧"
+            "火柴人要进行人机验证"
+            menu:
+                "请输入验证码的答案"
+                "0.3":
+                    "游戏结束"
+                    return
+                "0.30000000000004":
+                    "验证通过"
+                    "恭喜你，通过了第8关"
+            hide background 8
+
+            "没有照片，自己意会一下"
+            "火柴人游戏 第9关"
+            hcr "买张机票"
+            menu:
+                "北京大兴（PKX） —— 泉州晋江（JJN）"
+                "5929":
+                    "支付成功"
+                    "恭喜你，通过了第9关"
+                "8132":
+                    "余额不足"
+                    "游戏结束"
+                    return
+                "9189":
+                    "余额不足"
+                    "游戏结束"
+                    return
+                "8011":
+                    "余额不足"
+                    "游戏结束"
+                    return
+                "5931":
+                    "余额不足"
+                    "游戏结束"
+                    return
+                "5967":
+                    "余额不足"
+                    "游戏结束"
+                    return

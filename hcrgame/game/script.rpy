@@ -156,11 +156,11 @@ label start:
                     "恭喜你，通过了第8关"
             hide background 8
 
-            "没有照片，自己意会一下"
+            show background 9
             "火柴人游戏 第9关"
             hcr "买张机票"
             menu:
-                "北京大兴（PKX） —— 泉州晋江（JJN）"
+                "北京（所有机场） —— 泉州晋江（JJN）"
                 "5929":
                     "支付成功"
                     "恭喜你，通过了第9关"
@@ -184,3 +184,4 @@ label start:
                     "余额不足"
                     "游戏结束"
                     return
+            hide background 9

@@ -185,3 +185,19 @@ label start:
                     "游戏结束"
                     return
             hide background 9
+
+            show background 10
+            menu:
+                "火柴人现在来到了机场，不过他赶时间，应该怎么办呢？"
+                "国内出发":
+                    "游戏结束"
+                    return
+                "国际/港澳台出发":
+                    "游戏结束"
+                    return
+                "国内到达":
+                    "恭喜你，通过了第10关"
+                "国际/港澳台到达":
+                    "游戏结束"
+                    return
+            hide background 10

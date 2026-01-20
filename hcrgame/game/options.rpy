@@ -21,14 +21,14 @@ define gui.show_name = True
 
 ## 游戏版本号。
 
-define config.version = "Beta"
+define config.version = "2026Edition"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
 ## 行。
 
 define gui.about = _p("""
-版权所有©2025卓嘉彦 张溯芃
+版权所有(C)2025卓嘉彦 张溯芃
 """)
 
 

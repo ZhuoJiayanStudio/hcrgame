@@ -7,3 +7,6 @@
 用户可以在[卓嘉彦工作室官网](https://hcr2025.wordpress.com/)下载游戏。
 ### 开源
 用户可以在[GitHub仓库](https://github.com/ZhuoJiayanStudio/hcr)查看项目源代码。
+## 实时Star数
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ZhuoJiayanStudio/hcrgame&type=date&legend=top-left)](https://www.star-history.com/#ZhuoJiayanStudio/hcrgame&type=date&legend=top-left)

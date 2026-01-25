@@ -201,3 +201,13 @@ label start:
                     "游戏结束"
                     return
             hide background 10
+
+            show background 11
+            menu:
+                "晋江机场站\n火柴人要怎么去酒店？"
+                "泉州地铁":
+                    "恭喜你，通过了第11关"
+                "泉州公交":
+                    "游戏结束"
+                    return
+            hide background 11

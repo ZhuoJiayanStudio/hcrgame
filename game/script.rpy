@@ -6,7 +6,9 @@ label start:
     show 8
     """
     著作权由卓嘉彦（80\%）和张溯芃（20\%）共同拥有。\n
-    官方网站https://hcrgame.org/
+    官方网站https://hcrgame.org/\n
+    依据CC BY-NC-SA 4.0 CN的要求，现公布以下作者：\n
+    卓嘉彦 - 火柴人音乐、火柴人照片
     """
     hide 8
     menu:
@@ -264,7 +266,7 @@ label start:
                     return
             hide background 15
 
-            "非常抱歉程序员把策划案看错了，导致没有第16关，非常抱歉"
+            "非常抱歉，程序员把策划案看错了，导致没有第16关，非常抱歉"
             "终末之诗 End Poem\n
             采用 CC0 1.0通用 (CC0 1.0) 公共领域贡献 协议许可\n
             作者：Julian Gough"

@@ -266,6 +266,10 @@ label start:
                     return
             hide background 15
 
+            show background 16
+            "完蛋，第16关坏了"
+            hide background 16
+
             "非常抱歉，程序员把策划案看错了，导致没有第16关，非常抱歉"
             "终末之诗 End Poem\n
             采用 CC0 1.0通用 (CC0 1.0) 公共领域贡献 协议许可\n

@@ -12,13 +12,16 @@ label start:
     """
     hide 8
     python:
+        import random
+        by = ["官方网站hcrgame.org！", "感谢所有参与游戏制作、发布的人员！", "注意看，这个男人叫小帅，他正在测试新的闪烁标语功能。"]
+        nr = by[random.randrange(len(by))]
         Playername =  renpy.input("请输入你的用户名", length=32)
         Playername = Playername.strip()
         if not Playername:
             Playername = "火柴人"
     "你好，[Playername]！"
     menu:
-        "火柴人游戏"
+        "火柴人游戏\n{font=SourceHanSansLite.ttf}{color=#ffff00}[nr]{/color}{/font}"
         "开始游戏":
             "游戏结束"
             return

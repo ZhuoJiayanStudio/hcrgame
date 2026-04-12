@@ -10,6 +10,12 @@ label start:
     依据CC BY-NC-SA 4.0 CN的要求，现公布以下作者：\n
     卓嘉彦 - 火柴人音乐、火柴人照片
     """
+    """
+    谷歌宣布，从 2026/2027 年开始，所有在经过认证的 Android 设备上运行的应用程序都将要求开发者直接向谷歌提交个人身份信息。\n
+    由于该应用的开发者不同意这一要求，因此该应用此后将无法在经过认证的安卓设备上运行。
+    """
+    "{font=BorelDisplay-Regular.otf}Google has announced that, starting in 2026/2027, all apps on certified Android devices will require the developer to submit personal identity details directly to Google.{/font}"
+    "{font=BorelDisplay-Regular.otf}Since the developers of this app do not agree to this requirement, this app will no longer work on certified Android devices after that time.{/font}"
     hide 8
     python:
         import random

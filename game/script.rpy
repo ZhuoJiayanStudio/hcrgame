@@ -46,6 +46,7 @@ label main:
                 "向右走":
                     "恭喜你，通过了第1关"
                 "两个门都是真的。"
+            $ persistent.integral += 1
             hide background 1
 
             show background 2
@@ -64,6 +65,7 @@ label main:
                 "向右走":
                     "游戏结束"
                     return
+            $ persistent.integral += 1
             hide background 2
 
             show background 3
@@ -88,6 +90,7 @@ label main:
                                         "不走":
                                             "游戏结束"
                                             return
+            $ persistent.integral += 1
             hide background 3
 
             show background 4
@@ -101,6 +104,7 @@ label main:
                     return
                 "尝试飞天":
                     "恭喜你，通过了第3A关"
+            $ persistent.integral += 1
             hide background 4
 
             show background 5
@@ -120,6 +124,7 @@ label main:
                         "向右飞":
                             "游戏结束"
                             return
+            $ persistent.integral += 1
             hide background 5
 
             show background 6
@@ -133,6 +138,7 @@ label main:
                     return
                 "跳起来":
                     "恭喜你，通过了第6关"
+            $ persistent.integral += 1
             hide background 6
 
             show background 7
@@ -163,6 +169,7 @@ label main:
                 "向右走":
                     "游戏结束"
                     return
+            $ persistent.integral += 1
             hide background 7
 
             show background 8
@@ -180,6 +187,7 @@ label main:
             "[yzmsc]"
             if yzmsc == "验证失败":
                 return
+            $ persistent.integral += 1
             hide background 8
 
             show background 9
@@ -210,6 +218,7 @@ label main:
                     "余额不足"
                     "游戏结束"
                     return
+            $ persistent.integral += 1
             hide background 9
 
             show background 10
@@ -226,6 +235,7 @@ label main:
                 "国际/港澳台到达":
                     "游戏结束"
                     return
+            $ persistent.integral += 1
             hide background 10
 
             show background 11
@@ -236,6 +246,7 @@ label main:
                 "泉州公交":
                     "游戏结束"
                     return
+            $ persistent.integral += 1
             hide background 11
 
             show background 12
@@ -247,6 +258,7 @@ label main:
                 "身份证":
                     "游戏结束"
                     return
+            $ persistent.integral += 1
             hide background 12
 
             show background 13
@@ -263,6 +275,7 @@ label main:
                         "拿矿泉水瓶砸他":
                             "游戏结束"
                             return
+            $ persistent.integral += 1
             hide background 13
 
             show background 14
@@ -273,6 +286,7 @@ label main:
                     return
                 "排队":
                     "恭喜你，通过了第13A关"
+            $ persistent.integral += 1
             hide background 14
 
             show background 15
@@ -286,10 +300,12 @@ label main:
                 "6531":
                     "游戏结束"
                     return
+            $ persistent.integral += 1
             hide background 15
 
             show background 16
             "完蛋，第16关坏了"
+            $ persistent.integral += 1
             hide background 16
 
             "终末之诗 End Poem\n
@@ -419,5 +435,5 @@ label integral:
                 except Exception as e:
                     narrator(f"发生未知错误: {e}")
             jump integral
-        "退出":
+        "返回主菜单":
             jump main

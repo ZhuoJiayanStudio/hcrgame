@@ -1,6 +1,7 @@
-﻿define hcr = Character("[Playername]")
+define hcr = Character("[Playername]")
 define gre = Character("Green", color = "#00ff40")
 define blu = Character("Blue" , color = "#0080ff")
+default persistent.integral = 0
 
 label start:
     show 8
@@ -26,8 +27,12 @@ label start:
         if not Playername:
             Playername = "火柴人"
     "{font=BorelDisplay-Regular.otf}hello, [Playername].{/font}"
+    jump main
+label main:
     menu:
         "火柴人游戏\n{font=SourceHanSansLite.ttf}{color=#ffff00}[nr]{/color}{/font}"
+        "积分":
+            jump integral
         "开始游戏":
             "游戏结束"
             return
@@ -369,3 +374,50 @@ label start:
             "游戏结束"
             "return"
             return
+label integral:
+    menu:
+        "你要执行什么操作？"
+        
+        "查询积分":
+            "你的积分是[persistent.integral]"
+            jump integral
+        "转出积分":
+            python:
+                try:
+                    user_input = renpy.input("你要转出多少积分？", length=32)
+                    if not user_input:
+                        raise ValueError("输入为空") 
+                    sz = int(user_input)
+                    if sz <= 0:
+                        narrator("转出数量必须大于0")
+                    elif sz > persistent.integral:
+                        narrator("余额不足")
+                    else:
+                        persistent.integral -= sz
+                        code_val = pow(sz, 83, 8448)
+                        narrator(f"请让对方输入：{code_val}")
+                except ValueError:
+                    narrator("输入无效，请输入数字")
+                except Exception as e:
+                    narrator(f"发生未知错误: {e}")
+            jump integral
+        "转入积分":
+            python:
+                try:
+                    user_input = renpy.input("请输入对方发来的数字：", length=32)
+                    if not user_input:
+                        raise ValueError("输入为空")
+                    sz = int(user_input)
+                    if sz < 0 or sz >= 8448:
+                        narrator("无效的验证码")
+                    else:
+                        sz = pow(sz, 987, 8448)
+                        persistent.integral += sz
+                        narrator(f"成功转入积分，当前积分：{persistent.integral}")
+                except ValueError:
+                    narrator("输入无效，请输入数字")
+                except Exception as e:
+                    narrator(f"发生未知错误: {e}")
+            jump integral
+        "退出":
+            jump main

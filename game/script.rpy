@@ -31,7 +31,7 @@ label start:
 label main:
     menu:
         "火柴人游戏\n{font=SourceHanSansLite.ttf}{color=#ffff00}[nr]{/color}{/font}"
-        "积分":
+        "{font=SourceHanSansLite.ttf}积分{/font}":
             jump integral
         "开始游戏":
             "游戏结束"

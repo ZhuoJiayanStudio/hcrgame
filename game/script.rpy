@@ -410,7 +410,7 @@ label integral:
                         narrator("余额不足")
                     else:
                         persistent.integral -= sz
-                        code_val = pow(sz, 83, 8448)
+                        code_val = pow(sz, 3, 33)
                         narrator(f"请让对方输入：{code_val}")
                 except ValueError:
                     narrator("输入无效，请输入数字")
@@ -427,7 +427,7 @@ label integral:
                     if sz < 0 or sz >= 8448:
                         narrator("无效的验证码")
                     else:
-                        sz = pow(sz, 987, 8448)
+                        sz = pow(sz, 7, 33)
                         persistent.integral += sz
                         narrator(f"成功转入积分，当前积分：{persistent.integral}")
                 except ValueError:

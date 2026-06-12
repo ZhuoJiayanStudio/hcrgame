@@ -1,0 +1,4 @@
+node_modules
+game/saves/*
+game/cache/*
+Releases/

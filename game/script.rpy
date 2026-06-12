@@ -1,3 +1,6 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# 本项目的源代码使用MPL 2.0协议，素材使用MPL2.0, CC0 1.0或CC BY-SA 4.0开源
 define hcr = Character("[Playername]")
 define gre = Character("Green", color = "#00ff40")
 define blu = Character("Blue" , color = "#0080ff")
@@ -8,7 +11,7 @@ label start:
     """
     著作权由卓嘉彦（80\%）和张溯芃（20\%）共同拥有。\n
     官方网站https://hcrgame.org/\n
-    依据CC BY-NC-SA 4.0 CN的要求，现公布以下作者：\n
+    依据CC BY-SA 4.0 CN的要求，现公布以下作者：\n
     卓嘉彦 - 火柴人音乐、火柴人照片
     """
     """

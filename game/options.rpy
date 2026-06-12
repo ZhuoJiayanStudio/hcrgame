@@ -1,8 +1,9 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 ## 此文件包含有可自定义您游戏的设置。
 ##
 ## 以“##”开头的语句是注释，您不应该对其取消注释。以“#”开头的语句是注释掉的代码，
 ## 在适用的时候您可能需要对其取消注释。
-
 
 ## 基础 ##########################################################################
 
@@ -28,7 +29,10 @@ define config.version = "26.2.16"
 ## 行。
 
 define gui.about = _p("""
-火柴人游戏
+本作品之核心代码（.rpy文件）基于 Mozilla Public License v. 2.0 协议开源保护。\n
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. \n
+你可以前往https://github.com/ZhuoJiayanStudio/hcrgame/ 免费获取本项目的完整源代码形式（Source Code Form）。
+火柴人游戏\n
 (C)2025~2026 卓嘉彦 张溯芃
 """)
 
@@ -171,6 +175,7 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.progressive_download = True  # 注意这里是 build 开头，不是 config
 
     ## 若要封装文件，需将其列为“archive”。
 

@@ -2,3 +2,9 @@ node_modules
 game/saves/*
 game/cache/*
 Releases/
+*.keystore
+*.apk
+errors.txt
+log.txt
+traceback.txt
+hcrgame-*-dists/
